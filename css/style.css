@@ -1,0 +1,213 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+/*Estilos de To Do List*/
+
+#listas{
+    margin: 30px;
+}
+
+.container_todo {
+    background-color: antiquewhite;
+    width: 400px;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+}
+
+.header {
+    background-image: url('../img/flores.jpg');
+    background-size: cover;
+    border-radius: 5px 5px 0 0;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.new-todo {
+    width: 100%;
+    height: 50px;
+    padding: 0.25rem 0;
+}
+
+.new-todo form {
+    display: flex;
+    align-items: center;
+}
+
+.new-todo form input {
+    flex: 1;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    border-right: 0px;
+    outline: transparent;
+    padding-left: 0.5rem;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.new-todo form button {
+    width: 50px;
+    height: 50px;
+    font-size: 2rem;
+    background-color: transparent;
+    color: #5588E6;
+    border: none;
+    border-left: 0px;
+    cursor: pointer;
+}
+
+.new-todo form button:hover {
+    text-shadow: 1px 1px 20px rgba(0, 0, 0, 0.8);
+}
+
+#todos-list {
+    height: calc(600px - 150px);
+    background-color: #fff;
+    padding: 0.5rem;
+    border: 1px solid rgb(219, 219, 219);
+    overflow: scroll;
+    border-radius: 0 0 5px 5px;
+}
+
+#todos-list .todo {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 0.5rem;
+    border-radius: 5px;
+}
+
+#todos-list .todo:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+#todos-list .todo * {
+    cursor: pointer;
+    margin-right: 0.5rem;
+    }
+#todos-list .todo i {
+    font-size: 0.9rem;
+}
+#todos-list .todo p {
+    flex: 1;
+    word-break: break-all;
+}
+.checked {
+    text-decoration: line-through;
+    color: grey;
+}
+#todos-list .todo .bi-pencil-square {
+    color: rgb(31, 177, 48);
+}
+#todos-list .todo .bi-trash {
+    color: rgb(236, 82, 82);
+    margin: 0;
+}
+
+/*ESTILOS TIMER*/
+
+.container_timer,
+.button-container,
+.timer{
+    display: flex;
+    justify-content: center;
+}
+
+.container_timer{
+    background-color: lightblue;
+    flex-direction: column;
+    align-items: center;
+    /* height: 100vh; */
+}
+
+.timer,
+button{
+    margin: 0.5rem;
+    border-radius: 5px;
+}
+
+.timer{
+    height:11rem;
+    width:12rem;
+    background-color: hotpink;
+    align-items: center;
+    padding: 1rem;
+}
+
+.timer p{
+    font-size: 70px;
+}
+
+button{
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    padding: 0.25rem 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+button:hover{
+    cursor: pointer;
+    background: lightgrey;
+}
+
+
+/*Tablero*/
+#board button{
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    background-color: lightblue;
+    color: white;
+    margin: 10px;
+}
+
+.containers{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.container{
+    margin: 10px;
+    padding: 5px 10px;
+    width: 100%;
+    background-color: lightblue;
+    border-radius: 5px;
+}
+
+textarea{
+    background-color: white;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 10px;
+    resize: vertical;
+    border:none;
+    padding: 10px;
+    outline: none;
+}
+
+#first{
+    background-color: #add8e6;
+}
+#second{
+    background-color: lightcoral;
+}
+#third{
+    background-color: lightpink;
+}
+.drag {
+    background-color: rgba(117, 74, 74, 0.46);
+}

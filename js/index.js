@@ -197,14 +197,14 @@ function onDragStart(e) {
     e.dataTransfer.setData("text", e.target.id);
     e.target.classList.add("drag");
 }
-//Iterate through the containers and all dragover in all of them
+//Iterar contenedores para que se puedan mover
 containers.forEach((container) => {
     container.addEventListener("dragover", function (e) {
     e.preventDefault();
     });
 });
-//Iterate through the containers and all drop in all of them
 
+//Iterar contenedores para que sean dropeables
 containers.forEach((container) => {
     container.addEventListener("drop", function (e) {
     e.preventDefault();
